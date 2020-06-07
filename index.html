@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Project#2</title>
+  </head>
+  <body>
+    <div id="bgimg">
+      <h1 id="title">freeCodeCamp Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+
+      <div id="bgcolor">
+        <div class="container">
+          <form action="" id="form-survey">
+            <div class="place">
+              <label class="h4" for="name">Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <div class="place">
+              <label class="h4" for="email">Email</label>
+              <input
+                class="form-control"
+                type="text"
+                id="email"
+                name="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+
+            <div class="place">
+              <label class="h4" for="age">Age(optional)</label>
+              <input
+                class="form-control"
+                type="number"
+                id="age"
+                name="age"
+                placeholder="Age"
+                required
+              />
+            </div>
+
+            <div class="place">
+              <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
+                ><h5>Which option best describes your current role?</h5></label
+              >
+              <select
+                class="custom-select my-1 mr-sm-2"
+                id="inlineFormCustomSelectPref"
+              >
+                <option selected>Select current role</option>
+                <option value="1">Student</option>
+                <option value="2">Full Time Job</option>
+                <option value="3">Full Time Learner</option>
+                <option value="4">Prefer not to Say</option>
+                <option value="5">Other</option>
+              </select>
+            </div>
+
+            <div class="colr">
+              <h5>
+                Would you recommend freeCodeCamp to a friend?
+              </h5>
+              <input
+                type="radio"
+                id="definitely"
+                name="friend"
+                value="definitely"
+              />
+              <label for="definitely">Definitely</label><br />
+              <input type="radio" id="maybe" name="friend" value="maybe" />
+              <label for="maybe">Maybe</label><br />
+              <input type="radio" id="sure" name="friend" value="sure" />
+              <label for="sure">Not sure</label>
+
+              <div class="place">
+                <label class="my-1 mr-2" for="inlineFormCustomSelectPref"
+                  ><h5>
+                    What is your favorite feature of freeCodeCamp?
+                  </h5></label
+                >
+                <select
+                  class="custom-select my-1 mr-sm-2"
+                  id="inlineFormCustomSelectPref"
+                >
+                  <option selected>Select an option</option>
+                  <option value="1">Challenges</option>
+                  <option value="2">Projects</option>
+                  <option value="3">Community</option>
+                  <option value="4">Open Course</option>
+                  <option value="5">Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="colr">
+              <h5>
+                What would you like to see improved?
+                <span class="minsize"> (Check all that apply)</span>
+              </h5>
+              <input type="checkbox" id="front" name="front" value="front" />
+              <label for="front">Front-end Projects</label><br />
+
+              <input type="checkbox" id="back" name="back" value="back" />
+              <label for="back">Back-end Projects</label><br />
+
+              <input type="checkbox" id="data1" name="data1" value="data1" />
+              <label for="data1">Data Visualization</label><br />
+
+              <input
+                type="checkbox"
+                id="challenge"
+                name="challenge"
+                value="challenge"
+              />
+              <label for="challenge">Challenges</label><br />
+
+              <input type="checkbox" id="source" name="source" value="source" />
+              <label for="source">Open Source Community</label><br />
+
+              <input type="checkbox" id="gitter" name="gitter" value="gitter" />
+              <label for="gitter">Gitter help rooms</label><br />
+
+              <input type="checkbox" id="videos" name="videos" value="videos" />
+              <label for="videos">Videos</label><br />
+
+              <input type="checkbox" id="city" name="city" value="city" />
+              <label for="city">City Meetups</label><br />
+
+              <input type="checkbox" id="wiki" name="wiki" value="wiki" />
+              <label for="wiki">Wiki</label><br />
+
+              <input type="checkbox" id="form" name="form" value="form" />
+              <label for="form">Forum</label><br />
+
+              <input
+                type="checkbox"
+                id="additional"
+                name="additional"
+                value="additional"
+              />
+              <label for="additional">Additional Courses</label><br />
+            </div>
+            <div class="colr">
+              <label for="comment"><h5>Any comments or suggestions?</h5></label>
+              <textarea
+                placeholder="Enter your comment here..."
+                class="form-control"
+                id="comment"
+                name="comment"
+                rows="5"
+              >
+              </textarea
+              ><br />
+              <input
+                class="btn btn-success btn-lg btn-block"
+                type="submit"
+                value="Submit"
+                required
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
